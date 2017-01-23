@@ -19,7 +19,6 @@ ex1data$over_50k = as.factor(ex1data$over_50k)
 
 #get simple summary stats for the data and explore it 
 summary(ex1data)
-sapply(ex1data, sd)
 
 ggplot(ex1data, aes(over_50k, fill = race)) +
  geom_bar(aes(y=..count../sum(..count..))) +
